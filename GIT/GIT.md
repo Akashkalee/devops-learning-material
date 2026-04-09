@@ -9,6 +9,7 @@ Git is a popular version control system. It was created by Linus Torvalds in 202
 
 #### Where to use GIT?
 Git works on your computer, but you also use it with online services like Github, Gitlab, or Bitbucket to share your work with others. These are called remote respositories.
+#
 
 #### Why to learn Git?
 - Git is widely used toll, across over 70% of developer use Git!
