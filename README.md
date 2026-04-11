@@ -18,5 +18,5 @@ Devops is a practice that combines development and operations to build, test and
 ## Links for learning DevOps:
 
 Here are the all the topicwise links for recourses:
-- Linux Basic: https://www.geeksforgeeks.org/linux-unix/linux-tutorial/
+- [Linux Basic] (https://www.geeksforgeeks.org/linux-unix/linux-tutorial/)
 - 
