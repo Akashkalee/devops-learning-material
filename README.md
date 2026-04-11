@@ -1,6 +1,7 @@
 # devops-learning-material
 This repository contains all the required material for DEVOPS and SRE enthusiasts.
 
+### What is DevOps?
 
 Devops is a practice that combines development and operations to build, test and release software faster and more reliably. It focuses on automation, collaboration and continuous delivery to improve software quality and speed.
     - Helps teams release software faster with automation
