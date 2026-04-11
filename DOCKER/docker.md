@@ -17,5 +17,4 @@ Docker solves this by standardizing the runtime environment. By bundling the app
 
 Docker Architecture:
 
-![Docker Architecture (2)](https://github.com/user-attachments/assets/014e69e2-a260-403b-8482-144137521e6d)
-
+![Docker Architecture (2)](https://github.com/user-attachments/assets/03fbdf0c-22ab-45d4-915b-37ce32bbb9f5)
