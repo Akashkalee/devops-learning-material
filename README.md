@@ -10,4 +10,9 @@ Devops is a practice that combines development and operations to build, test and
 - Enables continuous integration and deployment
 - Improves collaboration between development and operations teams
 
-![My First Board](https://github.com/user-attachments/assets/a2d3abcd-5075-4dbd-8a0a-a6968f2b3efd)
+
+## Path to learn Devops
+
+
+![My First Board (1)](https://github.com/user-attachments/assets/2f52bfa6-d450-457f-a783-1c7d28f45156)
+
