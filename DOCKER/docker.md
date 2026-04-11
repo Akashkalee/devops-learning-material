@@ -15,4 +15,7 @@ Docker solves this by standardizing the runtime environment. By bundling the app
 - Efficiency: Starts in seconds, uses fewer system resources.
 
 
-Docker Architecture and Working
+Docker Architecture:
+
+![Docker Architecture (2)](https://github.com/user-attachments/assets/014e69e2-a260-403b-8482-144137521e6d)
+
