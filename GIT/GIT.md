@@ -272,6 +272,101 @@ To see which files changed in each commit, use git log --stat:
 #### Git Tagging
 
 #### What is a Tag?
+A tag in Git is like a lebel or bookmark for a specific commit.
 
+Tags are most often used to mark important points in your projects history, like releases(v1.0 or v2.0)
+
+Tags are a simple and reliable way to keep track of versions and share then with your team or users.
+
+Some common tag types include:
+    - Release: Tags let you mark when your project is ready for release, so you (and others) can always find that exact version later.
+    - Milestone: Use tags to highlight major milestones, like when a big feature is finished or a bug is fixed.
+    - Deployments: Many deployment tools use tags to know which version of your code to deply.
+    - Hotfixes: If you need to fix an old version, tags make it easy to check out and patch the right code.
+#
 
 #### Key Commands for Tagging
+
+    git tag <tagname> -Create a lightweight tag
+    git tag -a <tagname> -m "message" -Create an annotated tag
+    git tag <tagname> <commit-hash> -Tag a specific commit
+    git tag -List tags
+    git show <tagname> -Show tag details
+#
+
+#### Create a Lightweight Tag
+
+A lightweight tag is just a name for a commit.
+It's quick and simple, but does not store extra information.
+
+#### Annotated vs Lightweight Tags
+    - Annotated Tag: Stores author, date, and message.
+    Recommended for releases and sharing with others.
+    - Lightweight Tag: Just a simple name for a commit(no extra info, like a bookmark).
+
+#### Create an Annotated Tag (-a -m)
+
+An annotated tag stores your name, the date, and a message.
+This is recommended for most uses.
+
+![alt text](image-16.png)
+
+#### Tag a Specific Commit
+
+You can tag an older commit by specifying its hash:
+
+![alt text](image-15.png)
+
+
+#### List Tags
+
+See all tags in your repository:
+
+![alt text](image-17.png)
+
+#### Show Tag Details (git show)
+
+See details about a tag and the commit it points to:
+
+![alt text](image-18.png)
+
+#### Push Tags to Remote
+
+By default, tags exists only on your local computer.
+If you want others to see your tags, you need to push them to your remote respository.
+If you don't push your tags, only you will see them, and only locally.
+To push a single tag to your remote repository (for example, after creating a release tag):
+
+Did you know? Pushing commit with git push does not push your tags!
+
+You must push tags explicitly as shown above.
+
+To push all your local tags to the remote at once (useful if you've created several tags):
+
+![alt text](image-19.png)
+
+#### Delete Tags
+
+Delete a tag locally:
+
+![alt text](image-20.png)
+
+
+Delete a tag from the remote repository:
+
+![alt text](image-21.png)
+
+#### Update or Replace a Tag (Force Push)
+
+If you need to move a tag to a different commit and update the remote, use --force:
+
+![alt text](image-22.png)
+
+#### Tagging best Practices
+
+- Use tags to mark releases, major milestones, or stable points in your project.
+- Always use annotated tags (with -a -m) for anything public or shared.
+- Create tags after passing all tests or before deploying/releasing code.
+
+#### Git Stash
+
