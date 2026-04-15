@@ -370,3 +370,4 @@ If you need to move a tag to a different commit and update the remote, use --for
 
 #### Git Stash
 
+#### What is Git Stash? Why Use It?
