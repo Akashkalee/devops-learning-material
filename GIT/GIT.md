@@ -472,5 +472,6 @@ This is useful if you decide your work should become its own feature branch.
 - Don't use stashes as long-term storage-commit your work when possible.
 - Check your stash list regularly and clean up old stashes you no longer need.
 
-Note: Stashes are useful for temporary work, but are not a replacement for commits!
+[!NOTE]
+Stashes are useful for temporary work, but are not a replacement for commits!
 
