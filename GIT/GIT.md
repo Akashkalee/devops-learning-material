@@ -371,3 +371,106 @@ If you need to move a tag to a different commit and update the remote, use --for
 #### Git Stash
 
 #### What is Git Stash? Why Use It?
+Sometime you need to quickly switch tasks or fix a bug, but you're not ready to commit your work.
+git stash lets you save your uncommitted changes and return to a clean working directory.
+You can come back and restore your changes later.
+
+Here are some common use cases:
+    - Switch branches safely: Save your work before changing branches.
+    - Handle emergencies: Stash your work to fix something urgent, then restore it.
+    - Keep your work-in-progress safe: Avoid messy commits or losing changes.
+
+#### Stash Your Changes (git stash)
+Save your current changes (both staged and unstaged tracked files) with:
+
+#### What gets stashed?
+
+- Tracked files (both staged and unstaged) are stashed by default.
+- Untracked files (new files not yet added to Git) are not stashed by default.
+- To stash untracked files too, use git stash -u (or --include-untracked).
+
+#### What is a stash stack?
+
+Each time you run git stash, your changes are saved on top of a "stack".
+
+The most recent stash is on top, and you can apply or drop stashes from the top down, or pick a specific one from the list.
+
+#### Stash with a Message (git stash push -m)
+
+Add a message to remember what you stashed:
+
+<img width="1049" height="132" alt="image" src="https://github.com/user-attachments/assets/1e816df9-a980-4d0e-a8f9-1ad6d6b18abe" />
+
+This command lets you add a descriptive message to your stash so you can remember what you were working on.
+
+#### List All Stashes (git stash list)
+See all your saved stashes:
+
+<img width="811" height="161" alt="image" src="https://github.com/user-attachments/assets/e69d8cac-8bd3-4d90-99a7-9fafb74cbce7" />
+
+This command shows all the stashes you have saved so far, with their names and messages.
+
+
+#### Show Stash Details (git stash show)
+See what was changed in the latest stash:
+
+<img width="789" height="164" alt="image" src="https://github.com/user-attachments/assets/ec770b8c-0aa1-4b94-843f-70414882df74" />
+
+This command gives a summary of what files and changes are in your most recent stash.
+
+#### Apply the Latest Stash (git stash apply)
+Restore your most recent stashed changes (keeps the stash in the stack):
+
+<img width="1018" height="249" alt="image" src="https://github.com/user-attachments/assets/c2ea82cc-28f9-46a8-96c5-823e52b646d8" />
+
+This command restores your most recent stashed changes, but keeps the stash in the list so you can use it again if needed.
+
+#### Apply a Specific Stash (git stash apply stash@{n})
+
+Restore a specific stash from the list:
+
+<img width="672" height="193" alt="image" src="https://github.com/user-attachments/assets/0065d12b-6d6a-4235-93d3-b299b3b9f82a" />
+
+This command lets you restore a specific stash from your list, not just the most recent one.
+
+#### Pop the Stash (git stash pop)
+
+Apply the latest stash and remove it from the stack:
+
+<img width="694" height="231" alt="image" src="https://github.com/user-attachments/assets/16b1f3b9-8e65-4c78-8b23-5fc125844393" />
+
+This command restores your most recent stash and removes it from the list at the same time.
+
+#### Drop a Stash (git stash drop)
+Delete a specific stash when you no longer need it:
+
+<img width="628" height="127" alt="image" src="https://github.com/user-attachments/assets/70f601d2-80a2-4c7a-a5e9-d99b05a860c4" />
+
+This command deletes a specific stash from your list when you no longer need it
+
+#### Clear All Stashes (git stash clear)
+Delete all your stashes at once:
+
+<img width="498" height="109" alt="image" src="https://github.com/user-attachments/assets/c8312950-b6a7-43e3-b98e-9e0bec759cd4" />
+
+This command deletes all your stashes at once. Be careful! This cannot be undone!
+
+
+#### Branch from a Stash (git stash branch)
+Create a new branch and apply a stash to it.
+Useful if your stashed work should become its own feature branch:
+
+<img width="689" height="251" alt="image" src="https://github.com/user-attachments/assets/68f4a29f-de31-4c7d-a154-835b3789f83e" />
+
+This command creates a new branch and applies your stashed changes to it.
+This is useful if you decide your work should become its own feature branch.
+
+
+#### Best Practices for Stashing
+
+- Use clear messages when stashing: git stash push -m "WIP: feature name"
+- Don't use stashes as long-term storage-commit your work when possible.
+- Check your stash list regularly and clean up old stashes you no longer need.
+
+Note: Stashes are useful for temporary work, but are not a replacement for commits!
+
