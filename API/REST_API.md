@@ -118,6 +118,36 @@ So in practice, we will create lots of custom media types – usually one media 
 
 Every media type defines a default processing model. For example, HTML defines a rendering process for hypertext and the browser behavior around each element.
 
+```
+Media Types have no relation to the resource methods GET/PUT/POST/DELETE/… other than the fact that some media type elements will define a process model that goes like “anchor elements with an href attribute create a hypertext link that, when selected, invokes a retrieval request (GET) on the URI corresponding to the CDATA-encoded href attribute.”
+```
+
+2.4. **Example**
+
+Consider the following REST resource that represents a blog post with links to related resources in an HTTP-based REST API. This has the necessary information about the blog post, as well as the hypermedia links to the related resources such as author and comments. Clients can follow these links to discover additional information or perform actions.
+
+
+```
+{
+  "id": 123,
+  "title": "What is REST",
+  "content": "REST is an architectural style for building web services...",
+  "published_at": "2023-11-04T14:30:00Z",
+  "author": {
+    "id": 456,
+    "name": "John Doe",
+    "profile_url": "https://example.com/authors/456"
+  },
+  "comments": {
+    "count": 5,
+    "comments_url": "https://example.com/posts/123/comments"
+  },
+  "self": {
+    "link": "https://example.com/posts/123"
+  }
+}
+```
+
 
 
 6. **Resource Methods**
