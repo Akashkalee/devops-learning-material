@@ -27,8 +27,12 @@ Some APIs, such as SOAP or XML-RPC, impose a strict framework on developers. But
 
 REST is based on some constraints and priciples that promote simplicity, scalability, and statelessness in the design. The six guiding priniciples or constraints of the RESTful architecture are:
 
-1.1. Uniform Interface
-By applying the principle generality to the components interface, we can simplify the overall system architecture and improve the visibility of interactions. Multiple architectural constraints help in obtaining a uniform interface and guiding the behavior of components.
+1.1. **Uniform Interface**
+
+By applying the principle generality to the components interface, we can simplify the overall system architecture and improve the visibility of interactions. 
+
+Multiple architectural constraints help in obtaining a uniform interface and guiding the behavior of components.
+
 The following four constraints can achieve a uniform REST interface:
 
 1. **Identification of resources** - The interface must uniquely identify each resource involved in the interaction between the client and the server.
@@ -38,14 +42,20 @@ The following four constraints can achieve a uniform REST interface:
 
 In simpler words, REST defines a consistent and uniform interface for interactions between clients and servers. For example, the HTTP-based REST APIs make use of the standard HTTP methods (GET, POST, PUT, DELETE, etc.) and the URIs (Uniform Resource Identifiers) to identify resources.
    
-1.2. Client-Server
+1.2. **Client-Server**
+
 The client-server design pattern enforces the separation of concerns, which helps the client and the server components evolve independently.
+
 By separating the user interface concerns (client) from the data storage concerns(server), we improve the portability of the user interface across multiple platforms and improve scalability by simplifying the server components.
+
 While the client and the server evolve, we have to make sure that the interface/contract between the client and the server does not break.
    
-1.3.  Stateless
+1.3. **Stateless**
+
 Statelessness mandates that each request from the client to the server must contain all of the information necessary to understand and complete the request.
+
 The server cannot take advantage of any previously stored context information on the server.
+
 For this reason, the client application must entirely keep the session state.
 
 
