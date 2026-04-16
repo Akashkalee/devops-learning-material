@@ -10,3 +10,4 @@ Like the other architectural styles, REST also has its guiding principles and co
 ```
 A Web API (or Web Service) conforming to the REST architectural style is called a REST API (or RESTful API)
 ```
+1. *The Six Guiding Principles of REST*
