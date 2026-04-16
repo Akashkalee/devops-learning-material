@@ -1,4 +1,4 @@
-# What is an API?
+## What is an API?
 
 An API, which stands for application programming interface, is a set of protocols that enable different software components to communicate and transfer data. Developers use APIs to bridge the gaps between small, discrete chunks of code in order to create appications that are powerful, resilient, secure, and able to meet user needs. Even though you can't see them, APIs are everywhere-working continuously in the background to power the digital experiences that are essential to our modern lives.
 
@@ -32,3 +32,15 @@ Around 2010, some developers began using APIs to connect everyday objects—such
 
 <img width="606" height="214" alt="image" src="https://github.com/user-attachments/assets/88f26e7b-3d06-47f3-a7c6-c8916acef759" />
 
+
+## How do APIs work?
+
+APIs work by sharing data between applications, systems, and devices. This happens through a request and response cycle. The request is sent to the API, which retrieves the data and returns it to the user. Here's a high-level overview of how that process works.
+
+1. API client
+
+The API client is responsible for starting the conversation by sending the request to the API server. The request can be triggered in many ways. For instance, a user might initiate an API request by entering a search term or clicking a button. API requests may also be triggered by external events, such as a notification from another application.
+
+2. API request
+
+An API request will look and behave differently depending on the type of API, but it will typically include the following components:
