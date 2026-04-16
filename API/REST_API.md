@@ -10,11 +10,17 @@ Like the other architectural styles, REST also has its guiding principles and co
 ```
 A Web API (or Web Service) conforming to the REST architectural style is called a REST API (or RESTful API)
 ```
-1. * The Six Guiding Principles of REST *
-2. What is a Resource?
-3. Resource Methods
-4. REST and HTTP are Not the Same
-5. Summary
+1. **The Six Guiding Principles of REST**
+   REST is based on some constraints and priciples that promote simplicity, scalability, and statelessness in the design. The six guiding priniciples or constraints of the RESTful architecture are:
+   1. Uniform Interface
+      By applying the principle generality to the components interface, we can simplify the overall system architecture and improve the visibility of interactions. Multiple
+      architectural constraints help in obtaining a uniform interface and guiding the behavior of components.
+    2.  
+
+3. **What is a Resource?**
+4. **Resource Methods**
+5. **REST and HTTP are Not the Same**
+6. **Summary**
 
 
 
