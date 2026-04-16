@@ -50,3 +50,20 @@ An API request will look and behave differently depending on the type of API, bu
 - Parameters: Parameters are the variables that are passed to an API endpoint to provide specific instructions for the API to process. These parameters can be included in the API request as part of the URL, in the query string, or in the request body. For example, the /articles endpoint of a blogging API might accept a “topic” parameter, which it would use to access and return articles on a specific topic.
 - Request headers: Request headers are key-value pairs that provide extra details about the request, such as its content type or authentication credentials.
 - Request body: The body is the main part of the request, and it includes the actual data that is required to create, update, or delete a resource. For instance, if you were creating a new article in a blogging app, the request body would likely include the article's content, title, and author.
+
+
+3. API server
+
+The API client sends the request to the API server, which is responsible for handling authentication, validating input data, and retrieving or manipulating data.
+
+4. API response
+
+Finally, the API server sends a response to the client. The API response typically includes the following components:
+
+- Status code: HTTP status codes are three-digit codes that indicate the outcome of an API request. Some of the most common status codes include 200 OK, which indicates that the server successfully returned the requested data, 201 Created, which indicates the server successfully created a new resource, and 404 Not Found, which indicates that the server could not find the requested resource.
+- Response headers: HTTP response headers are very similar to request headers, except they are used to provide additional information about the server's response.
+- Response body: The response body includes the actual data or content the client asked for—or an error message if something went wrong.
+
+In order to better understand this process, it can be useful to think of APIs like restaurants. In this metaphor, the customer is like the user, who tells the waiter what she wants. The waiter is like an API client, receiving the customer's order and translating it into easy-to-follow instructions for the kitchen—sometimes using specific codes or abbreviations that the kitchen staff will recognize. The kitchen staff is like the API server because it creates the order according to the customer's specifications and gives it to the waiter, who then delivers it to the customer.
+
+
