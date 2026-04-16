@@ -94,11 +94,11 @@ The state of the resource at any particular time is known as the resource repres
 ```
 A REST API consists of an assembly of interlinked resources. This set of resources is known as the REST API’s resource model.
 ```
-2.1. Resource Identifiers
+2.1. **Resource Identifiers**
 
 REST uses resource identifiers to identify each resource involved in the interactions between the client and the server components.
 
-2.2. Hypermedia
+2.2. **Hypermedia**
 
 The data format of a representation is known as a media type. The media type identifies a specification that defines how a representation is to be processed.
 
@@ -110,7 +110,7 @@ Hypertext (or hypermedia) means the simultaneous presentation of information and
 Remember that hypertext does not need to be HTML (or XML or JSON) on a browser. Machines can follow links when they understand the data format and relationship types.
 ```
 
-2.3. Self-Descriptive
+2.3. **Self-Descriptive**
 
 Further, resource representations shall be self-descriptive: the client does not need to know if a resource is an employee or a device. It should act based on the media type associated with the resource.
 
