@@ -44,3 +44,6 @@ The API client is responsible for starting the conversation by sending the reque
 2. API request
 
 An API request will look and behave differently depending on the type of API, but it will typically include the following components:
+
+- Endpoint: An API endpoint is a dedicated URL that provides access to a specific resource. For instance, the /articles endpoint in a blogging app would include the logic for processing all requests that are related to articles.
+- Method: The request's method indicates the type of operation the client would like to perform on a given resource. REST APIs are accessible through standard HTTP methods, which perform common actions like retrieving, creating, updating, and deleting data.
