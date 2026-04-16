@@ -58,7 +58,25 @@ The server cannot take advantage of any previously stored context information on
 
 For this reason, the client application must entirely keep the session state.
 
+1.4. **Cacheable**
 
+The cacheable constraint requires that a response should implicitly or explicitly label itself as cacheable or non-cacheable.
+
+If the response is cacheable, the client application gets the right to reuse the response data later for equivalent requests and a specified period.
+
+
+
+1.5. **Layered System**
+
+The layered system style allows an architecture to be composed of hierarchical layers by constraining component behavior. In a layered system, each component cannot see beyond the immediate layer they are interacting with.
+
+A layman’s example of a layered system is the MVC pattern. The MVC pattern allows for a clear separation of concerns, making it easier to develop, maintain, and scale the application.
+
+1.6. **Code on Demand (Optional)**
+
+REST also allows client functionality to be extended by downloading and executing code in the form of applets or scripts.
+
+The downloaded code simplifies clients by reducing the number of features required to be pre-implemented. Servers can provide part of the features delivered to the client in the form of code, and the client only needs to execute the code.
 
 
          
