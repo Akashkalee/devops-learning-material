@@ -148,11 +148,38 @@ Consider the following REST resource that represents a blog post with links to r
 }
 ```
 
+3. **Resource Methods**
+
+Another important thing associated with REST is resource methods. These resource methods are used to perform the desired transition between two states of any resource.
+
+A large number of people wrongly relate resource methods to HTTP methods (i.e., GET/PUT/POST/DELETE). Roy Fielding has never mentioned any recommendation around which method to use in which condition. All he emphasizes is that it should be a uniform interface.
+
+For example, if we decide that the application APIs will use HTTP POST for updating a resource – rather than the more common HTTP PUT – it’s all right. Still, the application interface will be RESTful.
+
+Ideally, everything needed to transition the resource state shall be part of the resource representation – including all the supported methods and what form they will leave the representation.
+
+4. **REST and HTTP are Not the Same**
+
+Many people prefer to compare HTTP with REST. REST and HTTP are not the same.
+
+Though REST also intends to make the web (internet) more streamlined and standard, Roy Fielding advocates using REST principles more strictly. And that’s where people try to start comparing REST with the web.
+
+Roy Fielding, in his dissertation, has not mentioned any implementation direction – including any protocol preference or even HTTP. As long as we are honoring the six guiding principles of REST, we can call our interface RESTful.
 
 
-6. **Resource Methods**
-7. **REST and HTTP are Not the Same**
-8. **Summary**
+5. **Summary**
+
+In simple words, in the REST architectureal style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs).
+
+The resources are acted upon by using a set of simple, well-defined operations. Also, the resources have to be decoupled from their representation so that clients can access the content in various formats, such as HTML, XML, plain text, PDF, JPEG, JSON, and others.
+
+The clients and servers exchange representations of resources by using a standardized interface and protocol. Typically, HTTP is the most used protocol, but REST does not mandate it.
+
+Metadata about the resource is made available and used to control caching, detect transmission errors, negotiate the appropriate representatino format, and perform authentication or access control.
+
+And most importantly, every interaction with the server must be stateless.
+
+All these priciples help RESTful applications to be simple, lightweight, and fast.
 
 
 
