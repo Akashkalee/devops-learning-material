@@ -20,7 +20,9 @@ Like the other architectural styles, REST also has its guiding principles and co
 ```
 A Web API (or Web Service) conforming to the REST architectural style is called a REST API (or RESTful API)
 ```
+
 1. **The Six Guiding Principles of REST**
+
 At the most basic level, an API is a mechanism that enables an application or service to access a resource within another application, service or database. The application or service that accesses resources is the client and the application or service that contains the resource is the server.
 
 Some APIs, such as SOAP or XML-RPC, impose a strict framework on developers. But developers can develop REST APIs by using virtually any programming language and support various data formats. The only requirement is that they align to the following six REST design principles, also known as architectural constraints.
