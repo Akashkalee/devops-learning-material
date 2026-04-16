@@ -78,9 +78,46 @@ REST also allows client functionality to be extended by downloading and executin
 
 The downloaded code simplifies clients by reducing the number of features required to be pre-implemented. Servers can provide part of the features delivered to the client in the form of code, and the client only needs to execute the code.
 
-
          
-5. **What is a Resource?**
+2. **What is a Resource?**
+
+The key abstraction of information in REST is a resource. Any information that we can name can be a resource. For example, a REST resource can be a document or image, a temporal service, a collection of other resources, or a non-virtual object (e.g., a person).
+
+The state of the resource at any particular time is known as the resource representation. The resource representations consist of:
+
+- the data
+- the metadata describing the data
+- and the hypermedia links that can help the clients transition to the next desired state.
+
+```
+A REST API consists of an assembly of interlinked resources. This set of resources is known as the REST API’s resource model.
+```
+2.1. Resource Identifiers
+
+REST uses resource identifiers to identify each resource involved in the interactions between the client and the server components.
+
+2.2. Hypermedia
+
+The data format of a representation is known as a media type. The media type identifies a specification that defines how a representation is to be processed.
+
+A RESTful API looks like hypertext. Every addressable unit of information carries an address, either explicitly (e.g., link and id attributes) or implicitly (e.g., derived from the media type definition and representation structure).
+
+```
+Hypertext (or hypermedia) means the simultaneous presentation of information and controls such that the information becomes the affordance through which the user (or automaton) obtains choices and selects actions.
+
+Remember that hypertext does not need to be HTML (or XML or JSON) on a browser. Machines can follow links when they understand the data format and relationship types.
+```
+
+2.3. Self-Descriptive
+
+Further, resource representations shall be self-descriptive: the client does not need to know if a resource is an employee or a device. It should act based on the media type associated with the resource.
+
+So in practice, we will create lots of custom media types – usually one media type associated with one resource.
+
+Every media type defines a default processing model. For example, HTML defines a rendering process for hypertext and the browser behavior around each element.
+
+
+
 6. **Resource Methods**
 7. **REST and HTTP are Not the Same**
 8. **Summary**
