@@ -26,23 +26,25 @@ At the most basic level, an API is a mechanism that enables an application or se
 Some APIs, such as SOAP or XML-RPC, impose a strict framework on developers. But developers can develop REST APIs by using virtually any programming language and support various data formats. The only requirement is that they align to the following six REST design principles, also known as architectural constraints.
 
 REST is based on some constraints and priciples that promote simplicity, scalability, and statelessness in the design. The six guiding priniciples or constraints of the RESTful architecture are:
-   1.1. Uniform Interface
-      By applying the principle generality to the components interface, we can simplify the overall system architecture and improve the visibility of interactions. Multiple
-      architectural constraints help in obtaining a uniform interface and guiding the behavior of components.
-      The following four constraints can achieve a uniform REST interface:
-      1. Identification of resources - The interface must uniquely identify each resource involved in the interaction between the client and the server.
-      2. Manipulation of resources through representations - The resources should have uniform representations in the server response. API consumers should use these representations to modify the resource state in the server.
-      3. Self-descriptive messages - Each resource represetation should carry enough information to describe how to process the message. It should also provide information on the additional actions that the client can perform on the resource.
-      4. Hypermedia as the engine of application state – The client should have only the initial URI of the application. The client application should dynamically drive all other resources and interactions with the use of hyperlinks.
-      In simpler words, REST defines a consistent and uniform interface for interactions between clients and servers. For example, the HTTP-based REST APIs make use of the standard HTTP methods (GET, POST, PUT, DELETE, etc.) and the URIs (Uniform Resource Identifiers) to identify resources.
+
+1.1. Uniform Interface
+By applying the principle generality to the components interface, we can simplify the overall system architecture and improve the visibility of interactions. Multiple architectural constraints help in obtaining a uniform interface and guiding the behavior of components.
+The following four constraints can achieve a uniform REST interface:
+
+1. **Identification of resources** - The interface must uniquely identify each resource involved in the interaction between the client and the server.
+2. **Manipulation of resources through representations** - The resources should have uniform representations in the server response. API consumers should use these representations to modify the resource state in the server.
+3. **Self-descriptive messages** - Each resource represetation should carry enough information to describe how to process the message. It should also provide information on the additional actions that the client can perform on the resource.
+4. **Hypermedia as the engine of application state** – The client should have only the initial URI of the application. The client application should dynamically drive all other resources and interactions with the use of hyperlinks.
+
+In simpler words, REST defines a consistent and uniform interface for interactions between clients and servers. For example, the HTTP-based REST APIs make use of the standard HTTP methods (GET, POST, PUT, DELETE, etc.) and the URIs (Uniform Resource Identifiers) to identify resources.
    
-   1.2. Client-Server
-      The client-server design pattern enforces the separation of concerns, which helps the client and the server components evolve independently.
-      By separating the user interface concerns (client) from the data storage concerns(server), we improve the portability of the user interface across multiple platforms and improve scalability by simplifying the server components.
-      While the client and the server evolve, we have to make sure that the interface/contract between the client and the server does not break.
+1.2. Client-Server
+The client-server design pattern enforces the separation of concerns, which helps the client and the server components evolve independently.
+By separating the user interface concerns (client) from the data storage concerns(server), we improve the portability of the user interface across multiple platforms and improve scalability by simplifying the server components.
+While the client and the server evolve, we have to make sure that the interface/contract between the client and the server does not break.
    
-   1.3.  Stateless
-      Statelessness mandates that each request from the client to the server must contain all of the information necessary to understand and complete the request.
+1.3.  Stateless
+Statelessness mandates that each request from the client to the server must contain all of the information necessary to understand and complete the request.
 The server cannot take advantage of any previously stored context information on the server.
 For this reason, the client application must entirely keep the session state.
 
