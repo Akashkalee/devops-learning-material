@@ -480,3 +480,26 @@ This is useful if you decide your work should become its own feature branch.
 > [!NOTE]
 > Stashes are useful for temporary work, but are not a replacement for commits!
 
+### Git History
+
+Git keeps a detailed record of every change made to your project.
+You can use history commands to see what changed, when, and who made the change.
+This is useful for tracking progress, finding bugs, and understanding your project's evolution.
+
+#### Key Commands for Viewing History
+
+- git log - Show full commit history
+- git log --oneline - Show a summary of commits
+- git show <commit> - Show details of a specific commit
+- git diff - See unstaged changes
+- git diff --staged - See staged changes
+
+#### Best Practices for Viewing History
+
+- Make frequent, meaningful commits to keep your history clear.
+- Write clear commit messages so you and your team can understand changes later.
+- Use git log --oneline for a quick overview of your commit history.
+- Use git diff before committing to review your work.
+
+  
+
