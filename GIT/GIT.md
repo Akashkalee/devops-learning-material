@@ -726,3 +726,12 @@ This deletes the branch named hello-world-images (if it's already merged).
 - Switch branches: `git checkout branch-name or git switch branch-name`
 - Delete a branch (not merged): `git branch -D branch-name`
 - See which branch you're on: `git status`
+
+#### Troubleshooting
+
+If you don't see your changes on the main branch, remember: changes in one branch stay there until you merge them.
+
+When deleting a branch, make sure it's merged first. If you try to delete an unmerged branch, Git will prevent you from doing so.
+
+To force delete an unmerged branch, use git branch -D branch-name.
+
