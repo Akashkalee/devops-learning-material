@@ -10,11 +10,11 @@ Git is a tool that helps you :
 #
 
 #### Where to use GIT?
-Git works on your computer, but you also use it with online services like Github, Gitlab, or Bitbucket to share your work with others. These are called remote respositories.
+Git works on your computer, but you can also use it with online services like Github, Gitlab, or Bitbucket to share your work with others. These are called remote respositories.
 #
 
 #### Why to learn Git?
-- Git is widely used toll, across over 70% of developer use Git!
+- Git is widely used tool, across over 70% of developer use Git!
 - It helps developers to work together from anywhere in the world.
 - Developers can see the full history of the project.
 - Developers can revert to earlier versions of a project. 
