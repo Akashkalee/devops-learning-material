@@ -233,6 +233,7 @@ If you just type git commit (no -m), your default editor will open so you can wr
 #
 
 #### Commit Message Best Practices:
+
 - Keep the first line short (50 characters or less.)
 - Use the imperative mood (e.g., "Add feature" not "Added feature").
 - Leave a blank line after the summary, then add more details if needed.
@@ -249,6 +250,7 @@ If you just type git commit (no -m), your default editor will open so you can wr
 #
 
 #### Troubleshooting Common Commit Mistakes
+
 Forgot to stage a file?
 If you run git commit -m "message" but forgot to git add a file, just add it and commit again. Or use git commit --amend to add it to your last commit.
 Typo in your commit message?
