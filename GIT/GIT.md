@@ -514,3 +514,22 @@ Use the arrow keys to scroll, and press q to quit.
 (for example, /fix), then press n to jump to the next match.
 > Press q at any time to quit.
 
+#### Show Commit Details (git show <commit>)
+
+See all the details and changes for a specific commit:
+
+<img width="987" height="455" alt="image" src="https://github.com/user-attachments/assets/64011b4b-8edc-4e27-9803-a648e8111469" />
+
+This command shows everything about a commit: who made it, when, the message, and the exact changes.
+
+
+#### Compare Changes (git diff)
+
+See what is different between your working directory and the last commit (unstaged changes):
+<img width="704" height="314" alt="image" src="https://github.com/user-attachments/assets/7f8e441f-d3cf-46fb-ac17-aab157b678cc" />
+This command shows changes you have made but not yet staged for commit.
+
+
+
+
+
