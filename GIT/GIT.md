@@ -4,6 +4,7 @@
 Git is a popular version control system. It was created by Linus Torvalds in 2025, and has been maintained by Junio Hamano since then.
 
 Git is a tool that helps you :
+
     - save and manage different versions of your files and code.
     - work with others, keep track of changes, and undo mistakes.
 #
