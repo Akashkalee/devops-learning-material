@@ -735,3 +735,11 @@ When deleting a branch, make sure it's merged first. If you try to delete an unm
 
 To force delete an unmerged branch, use git branch -D branch-name.
 
+
+### Git Branch Merge
+
+#### What is Merging in Git?
+
+Merging in Git means combining the changes from one branch into another.
+This is how you bring your work together after working separately on different features or bug fixes.
+
