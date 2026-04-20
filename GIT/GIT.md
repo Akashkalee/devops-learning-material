@@ -509,7 +509,7 @@ This command shows all commits, including author, date, and message.
 Use the arrow keys to scroll, and press q to quit.
 
 
->[!Tip:]
+> [!Tip:]
 > While viewing the log, you can search for a word by typing / followed by your search term
 (for example, /fix), then press n to jump to the next match.
 > Press q at any time to quit.
