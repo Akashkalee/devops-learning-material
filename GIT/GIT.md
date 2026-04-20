@@ -131,7 +131,7 @@ You just created your first Git Repository!
 
 #### What is a Repository?
 A Git repository is a folder that Git tracks for changes.
-The repository stores all your project's history and versions:
+The repository stores all your project's history and versions.
 #
 
 #### What Happens When You Run git init?
