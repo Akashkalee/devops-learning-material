@@ -529,7 +529,68 @@ See what is different between your working directory and the last commit (unstag
 <img width="704" height="314" alt="image" src="https://github.com/user-attachments/assets/7f8e441f-d3cf-46fb-ac17-aab157b678cc" />
 This command shows changes you have made but not yet staged for commit.
 
+#### Compare Staged Changes (git diff --staged)
 
+See what is different between your staged files and the last commit:
 
+<img width="673" height="310" alt="image" src="https://github.com/user-attachments/assets/3e7f1134-3cca-40eb-8747-41686d914b6f" />
 
+This command shows changes that are staged and ready to be committed.
+
+#### Compare Two Commits (git diff <commit1> <commit2>)
+
+See what changed between any two commits:
+
+<img width="667" height="304" alt="image" src="https://github.com/user-attachments/assets/4fbeff27-5e89-4345-a0d2-55a2f994ec79" />
+
+This command shows the differences between two specific commits.
+
+#### Show a Summary of Commits (git log --oneline)
+
+Show a short summary of each commit (great for a quick overview):
+
+<img width="727" height="182" alt="image" src="https://github.com/user-attachments/assets/86980e8c-21f2-4a96-839a-4813fa837415" />
+
+This command shows each commit on a single line for easy reading.
+
+#### Show Commits by Author (git log --author="Alice")
+
+See only the commits made by a specific author:
+
+<img width="742" height="250" alt="image" src="https://github.com/user-attachments/assets/0529537b-6023-40e1-b0f2-c4eaa65de285" />
+
+This command filters the log to show only commits by the author you specify.
+
+#### Show Recent Commits (git log --since="2 weeks ago")
+
+See only commits made in the last two weeks:
+
+<img width="775" height="233" alt="image" src="https://github.com/user-attachments/assets/504e0684-9cc6-4937-af1f-de4666481f0e" />
+
+This command shows only the commits made in a recent time frame.
+
+#### Show Files Changed Per Commit (git log --stat)
+
+See which files were changed in each commit and how many lines were added or removed:
+
+<img width="788" height="340" alt="image" src="https://github.com/user-attachments/assets/98c4fdf4-f2a0-440c-ab78-962c7300246d" />
+
+This command adds a summary of file changes to each commit in the log.
+
+#### Show a Branch Graph (git log --graph)
+
+See a simple ASCII graph of your branch history (great for visualizing merges):
+
+<img width="786" height="242" alt="image" src="https://github.com/user-attachments/assets/f42d869b-04db-4170-be88-532a46fcc235" />
+
+This command shows a simple graph of your branch and merge history.
+
+#### Troubleshooting
+
+- Can't see your changes? Make sure you have committed your work. Uncommitted changes won't appear in the history.
+- Log is too long? Use git log --oneline or git log --since to make it easier to read.
+- How do I quit the log view? Press q to exit the log or diff view
+
+> [!Note:]
+> Exploring your history helps you understand what changed, when, and why.
 
