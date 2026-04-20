@@ -501,5 +501,16 @@ This is useful for tracking progress, finding bugs, and understanding your proje
 - Use git log --oneline for a quick overview of your commit history.
 - Use git diff before committing to review your work.
 
-  
+  #### See Commit History (git log)
+
+<img width="980" height="243" alt="image" src="https://github.com/user-attachments/assets/84a20db7-6662-414c-995e-5425b1800c65" />
+
+This command shows all commits, including author, date, and message.
+Use the arrow keys to scroll, and press q to quit.
+
+
+>[Tip]:
+> While viewing the log, you can search for a word by typing / followed by your search term
+(for example, /fix), then press n to jump to the next match.
+> Press q at any time to quit.
 
