@@ -154,7 +154,7 @@ To make a file tracked, you need to add it to the staging area.
 #
 
 #### What is the Staging Environment
-The staging environment(or staging area) is like a waiting room for your changes.
+The staging environment (or staging area) is like a waiting room for your changes.
 You use it to tell Git exactly which files you want to include in your next commit.
 This gives you control over what goes into your project history.
 
