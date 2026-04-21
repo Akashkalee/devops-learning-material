@@ -35,6 +35,6 @@ Assuming anyone who wants to understand Kubernetes should have an understating o
 
 ## Kubernetes - Cluster Architecture
 
-<img width="880" height="720" alt="Docker Architecture (3)" src="https://github.com/user-attachments/assets/2176846a-1058-4345-96ad-dd9cb5b2309e" />
+<img width="820" height="620" alt="Docker Architecture (3)" src="https://github.com/user-attachments/assets/2176846a-1058-4345-96ad-dd9cb5b2309e" />
 
 
