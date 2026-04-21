@@ -76,3 +76,24 @@ The following controllers can have cloud provider dependencies:
 - Node controller: For checking the cloud provider to determine if a node has been deleted in the cloud after it stops responding
 - Route controller: For setting up routes in the underlying cloud infrastructure
 - Service controller: For creating, updating and deleting cloud provider load balancers
+
+
+### Node components 
+Node components run on every node, maintaining running pods and providing the Kubernetes runtime enviornment.
+
+#### Kubelet 
+An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.
+The kubelet takes a set of PodSpecs that are provided through various mechanisms and ensures that the containers described in those PodSpecs are running and healthy. The kubelet doesn't manage containers which were not created by kubernetes.
+
+#### kube-proxy(optional)
+kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kuberenetes Service concept.
+kube-proxy maintainers network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.
+kube-proxy uses the operating system packet filtering layer if there is one and it's available. Otherwise, kube-proxy forwards the traffic itself.
+If you use a network plugin that implements packet forwarding for Services by itself, and providing equivalent behavior to kube-proxy, then you do not need to run kube-proxy on the nodes in your cluster.
+
+#### Container runtime 
+A fundamental component that empowers Kubernetes to run containers effectively. It is responsible for managing the execution and lifecycle of containers within the Kubernetes environment.
+
+Kubernetes supports container runtimes such as containerd, CRI-O, and any other implementation of the Kubernetes CRI (Container Runtime Interface).
+
+
