@@ -7,11 +7,11 @@ Kubernetes is open-source contianer orchestration platform originally developed 
 **Key Features of Kubernetes**
 
 Kubernetes comes with a robust set of features for managing modern cloud-native applications:
-- Application centric management - Foucuses on treating applications as top priority, making it easier to configure and run them automatically.
-- Automated deployment and scaling - Automatically adjusts workloads based on demand.
-- Auto scaling capabilities - Supports scaling up and down based on real-time demand.
-- Containerized infrastructure - Manages applications in containers across different machines, ensuring they are always available and portable.
-- Continuous development, integration, and deployment - Supports automated application updates and deployments using tools like Jenkins, ArgoCD, and Tekton.
-- Environment consistency across development, testing and production - Ensures consistent environments across different stages using simple configuration.
-- Efficient resource utilization - Optimizes the use of CPU, memory, and storage with built-in policies.
-- Self healing and fault tolerance - Automatically restarts failed containers and replaces unhealthy nodes to maintain stabiliy.
+- **Application centric management** - Foucuses on treating applications as top priority, making it easier to configure and run them automatically.
+- **Automated deployment and scaling** - Automatically adjusts workloads based on demand.
+- **Auto scaling capabilities** - Supports scaling up and down based on real-time demand.
+- **Containerized infrastructure** - Manages applications in containers across different machines, ensuring they are always available and portable.
+- **Continuous development, integration, and deployment** - Supports automated application updates and deployments using tools like Jenkins, ArgoCD, and Tekton.
+- **Environment consistency across development, testing and production** - Ensures consistent environments across different stages using simple configuration.
+- **Efficient resource utilization** - Optimizes the use of CPU, memory, and storage with built-in policies.
+- **Self healing and fault tolerance** - Automatically restarts failed containers and replaces unhealthy nodes to maintain stabiliy.
