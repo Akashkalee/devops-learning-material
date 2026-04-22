@@ -767,7 +767,7 @@ So it can "Fast-forward", just pointing both master and emergency-fix to the sam
 - Write clear and descriptive merge commit messages.
 
 
-### Practical Examples
+#### Practical Examples
 
 - Abort a merge: git merge --abort
 - Check status during a merge: git status
@@ -775,4 +775,36 @@ So it can "Fast-forward", just pointing both master and emergency-fix to the sam
 - Fast-forward merge: Happens when no new commits diverged-Git just moves the branch pointer forward.
 - No-fast-forward merge: Use git merge --no-ff branch to always create a merge commit, preserving branch history.
 
-  
+As master and emergency-fix are essentially the same now, we can delete emergency-fix, as it is no longer needed:
+
+<img width="768" height="127" alt="image" src="https://github.com/user-attachments/assets/71ebeeb8-39f9-41b4-a760-22419653a1de" />
+
+#### Non-Fast-Forward Merge (git merge --no-ff)
+
+By default, if your branch can be merged with a fast-forward (no new commits on the base), Git just moves the branch pointer forward.
+
+If you want to always create a merge commit (to keep history clearer), use git merge --no-ff branchname.
+
+<img width="766" height="180" alt="image" src="https://github.com/user-attachments/assets/0454c23a-32c5-4e7d-8e38-fe08f2d809a7" />
+
+#### Squash Merge (git merge --squash)
+
+If you want to combine all the changes from a branch into a single commit (instead of keeping every commit), use git merge --squash branchname.
+
+This is useful for cleaning up commit history before merging.
+
+<img width="1002" height="160" alt="image" src="https://github.com/user-attachments/assets/c37b7ec1-de92-45f5-9440-54761edb53ab" />
+
+#### Aborting a Merge (git merge --abort)
+
+If you run into trouble during a merge (like a conflict you don't want to resolve), you can cancel the merge and go back to how things were before with git merge --abort.
+
+<img width="505" height="100" alt="image" src="https://github.com/user-attachments/assets/828840d5-bcb9-48ce-8762-f30a87430a95" />
+
+
+#### What is a Merge Conflict?
+
+A merge conflict happens when changes in two branches touch the same part of a file and Git doesn't know which version to keep.
+
+Think of it like two people editing the same sentence in a document in different ways-Git needs your help to decide which version to use.
+
