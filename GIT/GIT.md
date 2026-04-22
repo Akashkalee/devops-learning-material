@@ -826,6 +826,7 @@ Then, stage and commit your changes.
 
 #### Summary of Git best practices
 
+```
 - Commit often
 - Write clear commit messages
 - Use Branches
@@ -834,5 +835,5 @@ Then, stage and commit your changes.
 - Keep Repositories Small
 - Use .gitignore
 - Tag Releases
-
+```
   
