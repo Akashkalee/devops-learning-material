@@ -743,3 +743,10 @@ To force delete an unmerged branch, use git branch -D branch-name.
 Merging in Git means combining the changes from one branch into another.
 This is how you bring your work together after working separately on different features or bug fixes.
 
+Merging Branches (git merge)
+
+To combine the changes from one branch into another, use git merge.
+Usually, you first switch to the branch you want to merge into (often main or master), then run the merge command with the branch name you want to combine in.
+First, we need to change to the master branch:
+
+
