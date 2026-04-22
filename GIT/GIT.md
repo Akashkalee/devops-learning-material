@@ -749,4 +749,14 @@ To combine the changes from one branch into another, use git merge.
 Usually, you first switch to the branch you want to merge into (often main or master), then run the merge command with the branch name you want to combine in.
 First, we need to change to the master branch:
 
+<img width="616" height="129" alt="image" src="https://github.com/user-attachments/assets/85dbb9a7-db17-4369-94cf-ada1937539d5" />
+
+Now we merge the current branch (master) with emergency-fix:
+
+<img width="770" height="206" alt="image" src="https://github.com/user-attachments/assets/cd77fec4-9c41-428d-aa50-fcb409165597" />
+
+Since the emergency-fix branch came directly from master, and no other changes had been made to master while we were working, Git sees this as a continuation of master.
+
+So it can "Fast-forward", just pointing both master and emergency-fix to the same commit.
+
 
