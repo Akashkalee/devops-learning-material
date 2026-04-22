@@ -759,4 +759,10 @@ Since the emergency-fix branch came directly from master, and no other changes h
 
 So it can "Fast-forward", just pointing both master and emergency-fix to the same commit.
 
+#### Best Practices for Merging Branches
+
+- Always commit or stash your changes before starting a merge.
+- Regularly merge from the main branch into your feature branch to minimize conflicts.
+- Read and resolve conflicts carefully-don't just accept all changes blindly.
+- Write clear and descriptive merge commit messages.
 
