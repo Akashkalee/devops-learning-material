@@ -766,3 +766,13 @@ So it can "Fast-forward", just pointing both master and emergency-fix to the sam
 - Read and resolve conflicts carefully-don't just accept all changes blindly.
 - Write clear and descriptive merge commit messages.
 
+
+### Practical Examples
+
+- Abort a merge: git merge --abort
+- Check status during a merge: git status
+- Resolve a conflict and complete the merge: Edit the conflicted file(s), then git add file and git commit
+- Fast-forward merge: Happens when no new commits diverged-Git just moves the branch pointer forward.
+- No-fast-forward merge: Use git merge --no-ff branch to always create a merge commit, preserving branch history.
+
+  
