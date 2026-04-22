@@ -824,4 +824,15 @@ Then, stage and commit your changes.
 - Use git status to see what files need your attention.
 - If you're unsure, ask a teammate or look up the error message.
 
+#### Summary of Git best practices
 
+- Commit often
+- Write clear commit messages
+- Use Branches
+- Pull Before You Push
+- Review changes before commiting
+- Keep Repositories Small
+- Use .gitignore
+- Tag Releases
+
+  
