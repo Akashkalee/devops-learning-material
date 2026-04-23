@@ -846,3 +846,23 @@ The git revert command undoes a previous commit by creating a new commit that re
 
 This keeps your commit history intact and is the safest way to undo changes in a shared repository.
 
+#### Summary of Git Revert Commands and Options
+
+- git revert HEAD - Revert the latest commit
+- git revert <commit> - Revert a specific commit
+- git revert HEAD~2 - Revert a commit further back in history
+- git revert --no-edit - Skip commit message editor
+- git log --oneline - Show commit history
+
+#### First, you need to find the commit you want to undo.
+
+Use git log --oneline to see a summary of your commit history:
+
+How to Find the Commit to Revert
+
+#### Run Git Revert
+
+Once you've found the commit you want to undo, use git revert to create a new commit that reverses the changes:
+
+<img width="1152" height="222" alt="image" src="https://github.com/user-attachments/assets/7ee758d9-5c2e-4fe3-815e-39c34c3d879e" />
+
