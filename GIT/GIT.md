@@ -866,3 +866,21 @@ Once you've found the commit you want to undo, use git revert to create a new co
 
 <img width="1152" height="222" alt="image" src="https://github.com/user-attachments/assets/7ee758d9-5c2e-4fe3-815e-39c34c3d879e" />
 
+#### Review Changes After Git Revert
+
+After running git revert, review the changes to make sure everything is as expected:
+
+#### Tips & Best Practices
+
+Here are some tips and best practices to keep in mind when using Git Revert:
+
+- Use git revert instead of git reset when you want to undo a previous commit, but still keep the commit history intact.
+- Use git log --oneline to find the commit you want to undo.
+- Use git revert HEAD --no-edit to create a new commit that reverses the changes.
+
+#### Troubleshooting
+
+Here are some common issues you may encounter when using Git Revert:
+
+* If you get an error message saying "error: could not revert...", try using git revert --abort to abort the revert process.
+* If you get an error message saying "error: could not apply...", try using git revert --continue to continue the revert process.
