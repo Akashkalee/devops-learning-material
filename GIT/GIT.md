@@ -964,4 +964,12 @@ Be careful when using Git Reset, as it can delete changes and rewrite your commi
 
 Make sure to use it only when necessary.
 
+#### Git Amend
+
+What is Git Amend?
+
+Git Amend is a command that allows you to modify the most recent commit.
+
+You can use it to fix typos, add or remove files, or change the commit message.
+
 
