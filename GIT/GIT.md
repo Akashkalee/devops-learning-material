@@ -1007,3 +1007,8 @@ We see the previous commit is replaced with our amended one!
 > It is usually ok to make these kinds of changes to your own local repository.
 > However, you should avoid making changes that rewrite history to remote repositories, especially if others are working with them.
 
+#### Git Amend Files
+
+Adding files with --amend works the same way as above.
+Just add them to the staging environment before committing.
+
