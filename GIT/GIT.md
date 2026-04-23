@@ -965,3 +965,5 @@ You can use it to fix typos, add or remove files, or change the commit message.
 Use Git Amend when you need to make small changes to your last commit.
 It's perfect for fixing mistakes, adding forgotten files, or updating the commit message.
 
+#### Fix Last Commit Message
+
