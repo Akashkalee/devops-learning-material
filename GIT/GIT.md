@@ -837,3 +837,12 @@ Then, stage and commit your changes.
 - Tag Releases
 ```
   
+
+#### Git Revert
+
+#### What Does Git Revert Do?
+
+The git revert command undoes a previous commit by creating a new commit that reverses the changes.
+
+This keeps your commit history intact and is the safest way to undo changes in a shared repository.
+
