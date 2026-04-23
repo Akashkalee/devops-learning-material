@@ -915,3 +915,53 @@ After the previous chapter, we have a part in our commit history we could go bac
 
 Let's try and do that with reset.
 
+#### Git Reset Find Commit in Log
+
+First thing, we need to find the point we want to return to.
+
+To do that, we need to go through the log.
+
+To avoid the very long log list, we are going to use the --oneline option, which gives just one line per commit showing:
+
+The first seven characters of the commit hash - this is what we need to refer to in our reset command.
+the commit message
+
+#### Git Reset --soft
+
+git reset --soft <commit> moves HEAD to the specified commit, but keeps all your changes staged (in the index).
+
+This is useful if you want to combine several commits into one, or just want to rewrite history but keep your work ready to commit.
+
+<img width="667" height="113" alt="image" src="https://github.com/user-attachments/assets/53fabc14-666c-4ff5-a7b4-e0a9062a6c86" />
+
+All changes after 9a9add8 are now staged, ready for a new commit.
+
+#### Git Reset --mixed (default)
+
+git reset --mixed <commit> (or just git reset <commit>) moves HEAD to the specified commit and unstages any changes, but keeps them in your working directory.
+
+This is the default option and is useful if you want to "undo" a commit but keep your changes for editing or recommitting.
+
+<img width="810" height="113" alt="image" src="https://github.com/user-attachments/assets/79cb685d-7d73-4c95-a872-1f3a57b689ad" />
+
+All changes after 9a9add8 are now unstaged, but still in your files.
+
+#### Review Changes
+
+After running Git Reset, review your changes to make sure everything is as expected.
+
+#### Tips & Best Practices
+
+Use Git Reset with caution, as it can rewrite your commit history.
+
+Make sure to communicate with your team before making changes to the remote repository.
+
+#### Troubleshooting
+If you encounter issues with Git Reset, try using git status to see the current state of your repository.
+
+#### Warnings
+Be careful when using Git Reset, as it can delete changes and rewrite your commit history.
+
+Make sure to use it only when necessary.
+
+
