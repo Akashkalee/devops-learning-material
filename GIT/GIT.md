@@ -843,7 +843,6 @@ Then, stage and commit your changes.
 #### What Does Git Revert Do?
 
 The git revert command undoes a previous commit by creating a new commit that reverses the changes.
-
 This keeps your commit history intact and is the safest way to undo changes in a shared repository.
 
 #### Summary of Git Revert Commands and Options
@@ -857,7 +856,6 @@ This keeps your commit history intact and is the safest way to undo changes in a
 #### First, you need to find the commit you want to undo.
 
 Use git log --oneline to see a summary of your commit history:
-
 How to Find the Commit to Revert
 
 #### Run Git Revert
@@ -890,9 +888,7 @@ Here are some common issues you may encounter when using Git Revert:
 #### What Does Git Reset Do?
 
 The git reset command moves your current branch (HEAD) to a different commit.
-
 Depending on the option, it can also change which changes are staged or even delete changes from your working directory.
-
 Use it to undo commits, unstage files, or clean up your history.
 
 #### Summary of Git Reset Commands and Options
@@ -906,21 +902,17 @@ Use it to undo commits, unstage files, or clean up your history.
 #### How to Find the Commit to Reset To
 
 First, you need to find the commit you want to go back to.
-
 Use git log --oneline to see a summary of your commit history:
 
 Step 2: Move the repository back to that step:
 
 After the previous chapter, we have a part in our commit history we could go back to.
-
 Let's try and do that with reset.
 
 #### Git Reset Find Commit in Log
 
 First thing, we need to find the point we want to return to.
-
 To do that, we need to go through the log.
-
 To avoid the very long log list, we are going to use the --oneline option, which gives just one line per commit showing:
 
 The first seven characters of the commit hash - this is what we need to refer to in our reset command.
@@ -929,7 +921,6 @@ the commit message
 #### Git Reset --soft
 
 git reset --soft <commit> moves HEAD to the specified commit, but keeps all your changes staged (in the index).
-
 This is useful if you want to combine several commits into one, or just want to rewrite history but keep your work ready to commit.
 
 <img width="667" height="113" alt="image" src="https://github.com/user-attachments/assets/53fabc14-666c-4ff5-a7b4-e0a9062a6c86" />
@@ -939,7 +930,6 @@ All changes after 9a9add8 are now staged, ready for a new commit.
 #### Git Reset --mixed (default)
 
 git reset --mixed <commit> (or just git reset <commit>) moves HEAD to the specified commit and unstages any changes, but keeps them in your working directory.
-
 This is the default option and is useful if you want to "undo" a commit but keep your changes for editing or recommitting.
 
 <img width="810" height="113" alt="image" src="https://github.com/user-attachments/assets/79cb685d-7d73-4c95-a872-1f3a57b689ad" />
@@ -953,7 +943,6 @@ After running Git Reset, review your changes to make sure everything is as expec
 #### Tips & Best Practices
 
 Use Git Reset with caution, as it can rewrite your commit history.
-
 Make sure to communicate with your team before making changes to the remote repository.
 
 #### Troubleshooting
@@ -961,7 +950,6 @@ If you encounter issues with Git Reset, try using git status to see the current 
 
 #### Warnings
 Be careful when using Git Reset, as it can delete changes and rewrite your commit history.
-
 Make sure to use it only when necessary.
 
 #### Git Amend
@@ -969,7 +957,11 @@ Make sure to use it only when necessary.
 What is Git Amend?
 
 Git Amend is a command that allows you to modify the most recent commit.
-
 You can use it to fix typos, add or remove files, or change the commit message.
 
+
+#### When to Use Git Amend
+
+Use Git Amend when you need to make small changes to your last commit.
+It's perfect for fixing mistakes, adding forgotten files, or updating the commit message.
 
