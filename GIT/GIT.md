@@ -1010,5 +1010,6 @@ We see the previous commit is replaced with our amended one!
 #### Git Amend Files
 
 Adding files with --amend works the same way as above.
+
 Just add them to the staging environment before committing.
 
