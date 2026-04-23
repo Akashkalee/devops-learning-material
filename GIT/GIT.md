@@ -884,3 +884,21 @@ Here are some common issues you may encounter when using Git Revert:
 
 * If you get an error message saying "error: could not revert...", try using git revert --abort to abort the revert process.
 * If you get an error message saying "error: could not apply...", try using git revert --continue to continue the revert process.
+
+#### Git Reset
+
+#### What Does Git Reset Do?
+
+The git reset command moves your current branch (HEAD) to a different commit.
+
+Depending on the option, it can also change which changes are staged or even delete changes from your working directory.
+
+Use it to undo commits, unstage files, or clean up your history.
+
+#### Summary of Git Reset Commands and Options
+
+- git reset --soft <commit> - Move HEAD to commit, keep changes staged
+- git reset --mixed <commit> - Move HEAD to commit, unstage changes (default)
+- git reset --hard <commit> - Move HEAD to commit, discard all changes
+- git reset <file> - Unstage a file
+- git log --oneline - Show commit history
