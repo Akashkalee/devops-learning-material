@@ -1013,3 +1013,5 @@ Adding files with --amend works the same way as above.
 
 Just add them to the staging environment before committing.
 
+#### Git Rebase
+
