@@ -902,3 +902,16 @@ Use it to undo commits, unstage files, or clean up your history.
 - git reset --hard <commit> - Move HEAD to commit, discard all changes
 - git reset <file> - Unstage a file
 - git log --oneline - Show commit history
+
+#### How to Find the Commit to Reset To
+
+First, you need to find the commit you want to go back to.
+
+Use git log --oneline to see a summary of your commit history:
+
+Step 2: Move the repository back to that step:
+
+After the previous chapter, we have a part in our commit history we could go back to.
+
+Let's try and do that with reset.
+
