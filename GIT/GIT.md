@@ -967,3 +967,43 @@ It's perfect for fixing mistakes, adding forgotten files, or updating the commit
 
 #### Fix Last Commit Message
 
+To change the last commit message, follow these steps:
+
+- Open your terminal and navigate to your repository.
+- Type git commit --amend -m "New message" to change the commit message.
+- Press Enter to save the changes.
+
+<img width="801" height="90" alt="image" src="https://github.com/user-attachments/assets/7c04ce73-c7d2-4a6f-bfd6-2bccd845bd8f" />
+
+Add Files to Last Commit
+
+To add files to the last commit, follow these steps:
+
+- Open your terminal and navigate to your repository.
+- Type git add <file> to add the file to the staging area.
+- Type git commit --amend to add the file to the last commit.
+- Press Enter to save the changes.
+
+<img width="633" height="120" alt="image" src="https://github.com/user-attachments/assets/0700441f-7b92-4cfb-bba9-061385aff3c2" />
+
+#### Remove Files from Last Commit
+
+To remove files from the last commit, follow these steps:
+
+Open your terminal and navigate to your repository.
+Type git reset HEAD^ -- <file> to remove the file from the staging area.
+Type git commit --amend to remove the file from the last commit.
+Press Enter to save the changes.
+
+<img width="834" height="142" alt="image" src="https://github.com/user-attachments/assets/846365ec-73fd-4681-8e30-ec5823e08448" />
+
+Oh no! the commit message is full of spelling errors.
+
+Embarrassing. Let's amend that:
+
+We see the previous commit is replaced with our amended one!
+
+>[!WARING]: Messing with the commit history of a repository can be dangerous.
+> It is usually ok to make these kinds of changes to your own local repository.
+> However, you should avoid making changes that rewrite history to remote repositories, especially if others are working with them.
+
