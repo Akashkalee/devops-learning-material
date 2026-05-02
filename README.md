@@ -29,7 +29,7 @@ Linux is widely used in servers and cloud environments This section covers essen
 
 ### GIT
 
-- 
+- [GIT Basic](GIT/GIT.md)
 
 ### Networking
 Networking helps understand how systems communicate and how to identify and fix issues across different layers.
