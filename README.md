@@ -51,7 +51,7 @@ Networking helps understand how systems communicate and how to identify and fix 
 - [Docker Basic](DOCKER/docker.md)
 
 ### Kubernetes
-- [Kubernetes](Kubernetes/Kubernetes.md)
+- [Kubernetes Basic](Kubernetes/Kubernetes.md)
 
 ### Infrastructure as a code (Terraform)
 
